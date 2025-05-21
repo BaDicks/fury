@@ -15,26 +15,25 @@ void test() {
 int main(){
 
     srand(time(0));
- //kljhkhhhh
-    std::string bot[3] = { "cumen", "noj", "bum" };
-        
-             int f = 0;
-             int user = 1;
+ //
+    std::string bot[3] = { "cumen", "noj", "bum" };    
 
-        while(true)
+    std::string  user;
+
+        for (int r = 0; r < 3;)
         {
 
-             int bon = 0+rand()%2;
-       
+             int e = 0 + rand() % 2;
+             
             std::cin >> user;
 
-            if (user == 1 && bot == 2 || user == 2 && bot == 3 || user == 3 && bot == 1)
+            if (user == "cumen" && bot[e] == "noj" || user == "noj" && bot[e] == "bum" || user == "bum" && bot[e] == "cumen")
             {
 
                 std::cout << "hil\n";
-                
+                r++;
             }
-            else if (user == 2 && bot == 1 || user == 3 && bot == 2 || user == 1 && bot == 3)
+            else if (user == "noj" && bot[e] == "cumen" || user == "bum" && bot[e] == "noj" || user == "cumen" && bot[e] == "bum")
             {
 
 
@@ -47,18 +46,17 @@ int main(){
 
                 std::cout << "rep\n";
             }
-                f++;
 
-            std::cout << bot << std::endl;
+            std::cout << bot[e] << std::endl;
         }
 
 
 
    
-    char a[] = { 'tam' };
+  /*  char a[] = { 'tam' };
     char d[] = { 'plav' };
 
-    char g[] = { 'h','e','r' };
+    char g[] = { 'h','e','r' };*/
 
      /*   for (g=0 ; g<3; g++)
     { 
@@ -70,10 +68,10 @@ int main(){
 
     }*/
     
-    for (int f = 0;f < 3; f++)
+    /*for (int f = 0;f < 3; f++)
     {
         std::cout << g[f];
-    }
+    }*/
 
 
 }
