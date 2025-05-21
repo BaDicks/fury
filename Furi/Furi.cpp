@@ -15,7 +15,7 @@ void test() {
 int main(){
 
     srand(time(0));
- //
+ //kljhkhhhh
     std::string bot[3] = { "cumen", "noj", "bum" };
         
              int f = 0;
